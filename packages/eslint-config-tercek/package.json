@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tercek",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint rules according to Clay Tercek's personal preference",
   "main": "index.js",
   "scripts": {
