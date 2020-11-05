@@ -25,9 +25,7 @@ try {
 
 module.exports = {
   extends: [
-    'eslint-config-airbnb',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier/react',
   ],
@@ -44,11 +42,20 @@ module.exports = {
     react: {
       version: oldestSupportedReactVersion,
     },
+    "import/resolver": {
+      "node": {
+        "paths": ["../../../src", "src", "../src"]
+      }
+    },
   },
   rules: {
     'react/prop-types': 'off',
     'react/display-name': ['warn', {ignoreTranspilerName: false}],
     'react/jsx-filename-extension': [1, {extensions: ['.ts', '.tsx']}],
     'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    'semi': ['warn', 'never'],
   },
 }
