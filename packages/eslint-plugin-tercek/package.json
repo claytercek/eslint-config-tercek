@@ -1,0 +1,70 @@
+{
+  "name": "eslint-config-tercek",
+  "version": "1.0.0",
+  "description": "ESLint rules according to Clay Tercek's personal preference",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --config index.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claytercek/tercek-scripts",
+    "directory": "packages/eslint-plugin-tercek"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Clay Tercek <code@claytercek.com> (https://claytercek.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claytercek/tercek-scripts/issues"
+  },
+  "homepage": "https://github.com/claytercek/tercek-scripts#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jest-dom": "^3.2.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-testing-library": "^3.10.0",
+    "read-pkg-up": "^7.0.1",
+    "semver": "^7.3.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.26.5",
+    "@testing-library/jest-dom": "^5.11.5",
+    "eslint": "^7.2.0",
+    "eslint-find-rules": "^3.6.1",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0",
+    "npm": ">=6",
+    "yarn": ">=1"
+  }
+}
