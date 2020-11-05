@@ -29,9 +29,11 @@ module.exports = {
     'jest/globals': true,
   },
   extends: [
-    "plugin:jest/recommended",
+    'plugin:jest/recommended',
     hasJestDom ? 'plugin:jest-dom/recommended' : null,
-    hasTestingLibrary && !hasTestingLibraryReact ? 'plugin:testing-library/recommended' : null,
+    hasTestingLibrary && !hasTestingLibraryReact
+      ? 'plugin:testing-library/recommended'
+      : null,
     hasTestingLibraryReact ? 'plugin:testing-library/react' : null,
   ].filter(Boolean),
   rules: {},
