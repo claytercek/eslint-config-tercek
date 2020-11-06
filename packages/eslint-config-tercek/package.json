@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/claytercek/tercek-scripts/issues"
   },
-  "homepage": "https://github.com/claytercek/tercek-scripts#readme",
+  "homepage": "https://github.com/claytercek/tercek-scripts/tree/master/packages/eslint-config-tercek#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",

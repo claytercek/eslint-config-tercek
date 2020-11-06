@@ -6,7 +6,7 @@ const { rules: baseStyleRules } = require('./base/style');
 const { rules: baseVariablesRules } = require('./base/variables');
 
 module.exports = {
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react'],
   extends: [    
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -27,6 +27,8 @@ module.exports = {
     es2020: true,
   },
   settings: {
+    'react/prop-types': 'off',
+
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts'],
     },
@@ -80,10 +82,6 @@ module.exports = {
     // Replace Airbnb 'func-call-spacing' rule with '@typescript-eslint' version
     'func-call-spacing': 'off',
     '@typescript-eslint/func-call-spacing': baseStyleRules['func-call-spacing'],
-
-    // Replace Airbnb 'indent' rule with '@typescript-eslint' version
-    indent: 'off',
-    '@typescript-eslint/indent': baseStyleRules.indent,
 
     // Replace Airbnb 'keyword-spacing' rule with '@typescript-eslint' version
     'keyword-spacing': 'off',
@@ -148,7 +146,7 @@ module.exports = {
 
     // Replace Airbnb 'no-use-before-define' rule with '@typescript-eslint' version
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': baseVariablesRules['no-use-before-define'],
+    "@typescript-eslint/no-use-before-define": "off",
 
     // Replace Airbnb 'no-useless-constructor' rule with '@typescript-eslint' version
     'no-useless-constructor': 'off',

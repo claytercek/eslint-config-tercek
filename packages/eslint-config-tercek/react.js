@@ -26,7 +26,6 @@ try {
 module.exports = {
   extends: [
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier/react',
   ],
@@ -45,10 +44,11 @@ module.exports = {
     },
   },
   rules: {
-    'react/prop-types': 'off',
     'react/display-name': ['warn', {ignoreTranspilerName: false}],
     'react/jsx-filename-extension': [1, {extensions: ['.ts', '.tsx']}],
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': 'off',
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
 }
