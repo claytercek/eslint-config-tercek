@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tercek",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint rules according to Clay Tercek's personal preference",
   "main": "index.js",
   "scripts": {
@@ -39,9 +39,11 @@
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.2"
   },
-  "peerDependencies": {
-    "eslint": "^7.0.0",
+  "devDependencies": {
     "typescript": "^4.0.5"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
   },
   "eslintConfig": {
     "extends": "./index.js"
