@@ -13,7 +13,7 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: ['.js', '.js', '.json'],
-        "paths": ["src"]
+        paths: ['src'],
       }
     },
     'import/extensions': [

@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'eslint:recommended',
     ...[
       './base/best-practices',
       './base/errors',
