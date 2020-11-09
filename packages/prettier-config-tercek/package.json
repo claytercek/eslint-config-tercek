@@ -1,0 +1,23 @@
+{
+  "name": "prettier-config-tercek",
+  "version": "1.0.0",
+  "description": "Prettier rules according to Clay Tercek's personal preference",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claytercek/tercek-scripts",
+    "directory": "packages/prettier-config-tercek"
+  },
+  "keywords": [
+    "prettier",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Clay Tercek <code@claytercek.com> (https://claytercek.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claytercek/tercek-scripts/issues"
+  },
+  "homepage": "https://github.com/claytercek/tercek-scripts/tree/master/packages/prettier-config-tercek#readme"
+}
