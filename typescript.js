@@ -4,8 +4,6 @@ const {rules: baseImportsRules} = require('./base/imports')
 const {rules: baseStyleRules} = require('./base/style')
 const {rules: baseVariablesRules} = require('./base/variables')
 
-var path = require('path');
-
 module.exports = {
   overrides: [
     {
@@ -14,7 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'plugin:import/typescript',
-        'prettier/@typescript-eslint'
+        'prettier/@typescript-eslint',
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
@@ -132,8 +130,13 @@ module.exports = {
           },
         ],
 
-        '@typescript-eslint/explicit-function-return-type': 'off'
+        '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
   ],
+  settings: {
+    'import/resolver': {
+      typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+    },
+  },
 }
